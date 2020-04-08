@@ -50,6 +50,7 @@ function funcRemover(){
 function funcConcluir(){
     this.closest('tr').style.color = "#cccccc";
     this.closest('tr').style.textDecoration = "line-through";
+    this.closest('tr').style.background = "#eeeedd";
     this.innerHTML = "<img src='images/undo.svg' alt='' height='10px'>";
     this.removeEventListener("click",funcConcluir);
     this.addEventListener("click",funcRetornar);
@@ -58,6 +59,7 @@ function funcConcluir(){
 function funcRetornar(){
     this.closest('tr').style.color = "black";
     this.closest('tr').style.textDecoration = "none";
+    this.closest('tr').style.background = "white";
     this.innerHTML = "<img src='images/001-check.svg' alt='' height='12px'>";
     this.addEventListener("click",funcConcluir)
 }

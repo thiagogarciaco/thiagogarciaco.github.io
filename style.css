@@ -79,3 +79,11 @@ main{
     display: block;
     margin: 0 auto;
 }
+
+/******************************************* Adicionando responsividade ****************************/
+
+@media screen add(max-width:500px){
+    main, .entrada-tarefa,.exibicao-tarefas{
+        width: auto;
+    }
+}
