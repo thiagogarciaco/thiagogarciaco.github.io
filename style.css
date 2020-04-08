@@ -86,7 +86,7 @@ main{
 
 /******************************************* Adicionando responsividade ****************************/
 
-@media screen add(max-width:500px){
+@media (max-width:480px){
     main, .entrada-tarefa,.exibicao-tarefas{
         width: auto;
     }
