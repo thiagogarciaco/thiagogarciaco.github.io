@@ -67,6 +67,10 @@ main{
     text-align: left;
 }
 
+#deletar,#concluir{
+    cursor: pointer;
+}
+
 .tabela-tarefas td:nth-child(1){
     width: 90%;
 }
