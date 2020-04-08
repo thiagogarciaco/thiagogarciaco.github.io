@@ -1,0 +1,80 @@
+body{
+    background: #eeeeee;
+}
+
+main{
+    width: 500px;
+    margin: 1em auto;
+    background: white;
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 5px 5px 5px #cccccc;
+}
+
+/******************************************* Estilo para o cadastro da tarefa ****************************/
+
+.entrada-tarefa{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#input-tarefa{
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 5px;
+    outline: 0;
+}
+
+#input-tarefa:focus{
+    border: none;
+    border-bottom: 1px solid #0000ff;
+    background: rgb(232, 240, 254);
+    padding-left: 5px;
+    outline: 0;
+}
+
+#cadastrar{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background: #4dd0e1;
+    font-weight: bold;
+}
+
+/******************************************* Estilo para o exibição das tarefas ****************************/
+
+.exibicao-tarefas{
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.tabela-tarefas{
+    width: 100%;
+    margin: 1em auto;
+}
+
+.tabela-tarefas tbody tr{
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+.tabela-tarefas th{
+    font-weight: bold;
+    text-align: left;
+}
+
+.tabela-tarefas td:nth-child(1){
+    width: 90%;
+}
+
+.tabela-tarefas td:nth-child(n+2){
+    vertical-align: middle;
+}
+
+.tabela-tarefas td:nth-child(n+2) img{
+    display: block;
+    margin: 0 auto;
+}
