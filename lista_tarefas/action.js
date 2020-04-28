@@ -10,7 +10,7 @@ document.querySelector("#cadastrar").addEventListener("click",function(e){
 
         tr.setAttribute("id","linha-tarefa")
 
-        var filho = "<td>" + tarefa + "</td><td id='concluir'><img src='images/001-check.svg' alt='' height='12px'></td><td id='deletar'><img src='images/002-clear.svg' alt='' height='10px'></td>"
+        var filho = "<td>" + tarefa + "</td><td id='concluir'><img src='lista_tarefas/images/001-check.svg' alt='' height='12px'></td><td id='deletar'><img src='lista_tarefas/images/002-clear.svg' alt='' height='10px'></td>"
         tr.innerHTML = filho
 
         document.querySelector("#tabela-tarefas").appendChild(tr)
@@ -51,7 +51,8 @@ function funcConcluir(){
     this.closest('tr').style.color = "#cccccc";
     this.closest('tr').style.textDecoration = "line-through";
     this.closest('tr').style.background = "#eeeedd";
-    this.innerHTML = "<img src='images/undo.svg' alt='' height='10px'>";
+    this.closest('tr').style.opacity = "0.6"
+    this.innerHTML = "<img src='lista_tarefas/images/undo.svg' alt='' height='10px'>";
     this.removeEventListener("click",funcConcluir);
     this.addEventListener("click",funcRetornar);
 }
@@ -60,6 +61,7 @@ function funcRetornar(){
     this.closest('tr').style.color = "black";
     this.closest('tr').style.textDecoration = "none";
     this.closest('tr').style.background = "white";
-    this.innerHTML = "<img src='images/001-check.svg' alt='' height='12px'>";
+    this.closest('tr').style.opacity = "1"
+    this.innerHTML = "<img src='lista_tarefas/images/001-check.svg' alt='' height='12px'>";
     this.addEventListener("click",funcConcluir)
 }
